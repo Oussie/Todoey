@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC74692E233A168500C686BA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74692D233A168500C686BA /* Item.swift */; };
 		AC9D6BE42337DC0D009EE959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9D6BE32337DC0D009EE959 /* AppDelegate.swift */; };
 		AC9D6BE62337DC0D009EE959 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9D6BE52337DC0D009EE959 /* TodoListViewController.swift */; };
 		AC9D6BE92337DC0D009EE959 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9D6BE72337DC0D009EE959 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC74692D233A168500C686BA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		AC9D6BE02337DC0D009EE959 /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9D6BE32337DC0D009EE959 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9D6BE52337DC0D009EE959 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -35,10 +37,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC74692F233A168C00C686BA /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC74692D233A168500C686BA /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		AC746930233A16B000C686BA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC9D6BE52337DC0D009EE959 /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AC746931233A16BD00C686BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC9D6BE72337DC0D009EE959 /* Main.storyboard */,
+				AC9D6BEC2337DC0F009EE959 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC746932233A16DE00C686BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC9D6BEA2337DC0F009EE959 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		AC9D6BD72337DC0D009EE959 = {
 			isa = PBXGroup;
 			children = (
 				AC9D6BE22337DC0D009EE959 /* Todoey */,
+				AC9D6BEF2337DC0F009EE959 /* Info.plist */,
 				AC9D6BE12337DC0D009EE959 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,11 +91,10 @@
 			isa = PBXGroup;
 			children = (
 				AC9D6BE32337DC0D009EE959 /* AppDelegate.swift */,
-				AC9D6BE52337DC0D009EE959 /* TodoListViewController.swift */,
-				AC9D6BE72337DC0D009EE959 /* Main.storyboard */,
-				AC9D6BEA2337DC0F009EE959 /* Assets.xcassets */,
-				AC9D6BEC2337DC0F009EE959 /* LaunchScreen.storyboard */,
-				AC9D6BEF2337DC0F009EE959 /* Info.plist */,
+				AC746930233A16B000C686BA /* Controllers */,
+				AC74692F233A168C00C686BA /* Data Model */,
+				AC746931233A16BD00C686BA /* Views */,
+				AC746932233A16DE00C686BA /* Supporting Files */,
 			);
 			path = Todoey;
 			sourceTree = "<group>";
@@ -136,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9D6BE62337DC0D009EE959 /* TodoListViewController.swift in Sources */,
+				AC74692E233A168500C686BA /* Item.swift in Sources */,
 				AC9D6BE42337DC0D009EE959 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CVW98SYAUU;
-				INFOPLIST_FILE = Todoey/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CVW98SYAUU;
-				INFOPLIST_FILE = Todoey/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
